@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from '../components/Header';
 import JobTile from '../components/JobTile';
 
 const jobs = [
@@ -24,10 +25,13 @@ const jobs = [
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center p-4">
-      {jobs.map((job) => (
-        <JobTile key={job.id} job={job} />
-      ))}
-    </main>
+    <div>
+      <Header />
+      <main className="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {jobs.map((job) => (
+          <JobTile key={job.id} job={job} />
+        ))}
+      </main>
+    </div>
   );
 }
