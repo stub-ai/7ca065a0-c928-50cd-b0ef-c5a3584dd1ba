@@ -15,7 +15,7 @@ interface JobTileProps {
 const JobTile: React.FC<JobTileProps> = ({ job }) => {
   return (
     <Link href={`/jobs/${job.id}`}>
-      <a className="flex flex-row items-center justify-start p-4 border border-gray-200 rounded shadow-sm hover:shadow-md transition-shadow duration-200 mb-4">
+      <a className="flex flex-row items-center justify-start p-4 border border-gray-200 rounded shadow-sm hover:shadow-md transition-shadow duration-200 mb-4 w-1/2 h-1/4">
         <img src={job.picture} alt={job.title} className="w-16 h-16 mr-4" />
         <div>
           <h2 className="text-lg font-semibold uppercase">{job.title}</h2>
