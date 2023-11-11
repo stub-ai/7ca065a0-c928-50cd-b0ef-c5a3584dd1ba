@@ -1,13 +1,19 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import React from 'react';
+import JobTile from '../components/JobTile';
 
-const inter = Inter({ subsets: ['latin'] })
+const jobs = [
+  // This should be replaced with actual data
+  { id: '1', title: 'Software Engineer', company: 'Google', logo: '/google-logo.png' },
+  { id: '2', title: 'Product Manager', company: 'Facebook', logo: '/facebook-logo.png' },
+  // ...
+];
 
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
+    <main className="flex flex-wrap justify-center p-4">
+      {jobs.map((job) => (
+        <JobTile key={job.id} job={job} />
+      ))}
     </main>
-  )
+  );
 }
