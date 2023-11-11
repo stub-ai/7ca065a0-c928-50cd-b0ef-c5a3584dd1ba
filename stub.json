@@ -1,0 +1,1 @@
+{"config":{"system_prompt":"","model":"","temperature":0,"top_p":1,"framework":"nextjs-page-tailwind"},"prompts":[{"prompt":"Create a web job media platform as shown in the photos. The first photo is the TOP page with clickable job tiles that transition to the second photo, which is the job listing.","md5":"2194f52d35346765878db9a9fd6ee469"}]}
