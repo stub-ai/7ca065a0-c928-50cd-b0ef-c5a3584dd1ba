@@ -10,7 +10,7 @@ const jobs = [
 
 export default function Home() {
   return (
-    <main className="flex flex-wrap justify-center p-4">
+    <main className="flex flex-col items-center p-4">
       {jobs.map((job) => (
         <JobTile key={job.id} job={job} />
       ))}
