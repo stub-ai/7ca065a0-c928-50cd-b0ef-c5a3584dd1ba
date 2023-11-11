@@ -10,7 +10,10 @@ const jobs = [
     company: 'Google', 
     logo: '/google-logo.png', 
     type: 'Long-term Intern', 
-    picture: '/job-picture.png' 
+    picture: '/job-picture.png',
+    location: 'Remote',
+    duration: '6 months',
+    stipend: '$2000 per month'
   },
   { 
     id: '2', 
@@ -18,7 +21,10 @@ const jobs = [
     company: 'Facebook', 
     logo: '/facebook-logo.png', 
     type: 'Short-term Intern', 
-    picture: '/job-picture.png' 
+    picture: '/job-picture.png',
+    location: 'On-site',
+    duration: '3 months',
+    stipend: '$1500 per month'
   },
   // ...
 ];

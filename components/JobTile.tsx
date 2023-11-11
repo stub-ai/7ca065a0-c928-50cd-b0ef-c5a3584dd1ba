@@ -9,6 +9,9 @@ interface JobTileProps {
     logo: string;
     type: string;
     picture: string;
+    location: string;
+    duration: string;
+    stipend: string;
   };
 }
 
@@ -21,6 +24,9 @@ const JobTile: React.FC<JobTileProps> = ({ job }) => {
           <h2 className="text-lg font-semibold">{job.title}</h2>
           <p className="text-sm text-gray-500">{job.company}</p>
           <p className="text-sm text-gray-500">{job.type}</p>
+          <p className="text-sm text-gray-500">{job.location}</p>
+          <p className="text-sm text-gray-500">{job.duration}</p>
+          <p className="text-sm text-gray-500">{job.stipend}</p>
         </div>
       </a>
     </Link>
